@@ -1,7 +1,11 @@
 import './style.css';
 import { initThree, updateScroll, setThemeColor } from './threeScene';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Inject Vercel Speed Insights analytics
+  injectSpeedInsights();
+
   // Initialize 3D Scene
   initThree('bg-canvas');
 
