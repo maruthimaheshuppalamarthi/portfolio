@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maruthi Mahesh Uppalamarthi — 3D Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+
+<body>
+
+  <!-- 3D Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">MARUTHI MAHESH UPPALAMARTHI<span>.</span></div>
+    <div class="nav-links" id="nav-links">
+      <a href="#hero" class="nav-item-sound">Home</a>
+      <a href="#skills" class="nav-item-sound">Skills</a>
+      <a href="#experience" class="nav-item-sound">Experience</a>
+      <a href="#certs" class="nav-item-sound">Certifications</a>
+      <a href="#education" class="nav-item-sound">Education</a>
+      <a href="#contact" class="nav-item-sound">Contact</a>
+    </div>
+    
+    <div class="nav-controls">
+      <button class="sound-btn hud-sound" id="sound-toggle" aria-label="Toggle Sci-Fi Audio">
+        <span class="sound-icon">🔈</span> <span id="sound-text">SOUND: OFF</span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <div class="hero-tag">Available for opportunities</div>
+      <h1>Cloud &amp; AI<br><em>Full Stack</em><br>Engineer</h1>
+      <p class="hero-desc">
+        Maruthi Mahesh Uppalamarthi — Building intelligent cloud-native solutions with Azure, Spring Boot, Generative
+        AI, Salesforce &amp; MuleSoft integrations at NexTurn.
+      </p>
+      <div class="hero-highlights">
+        <span class="h-tag blue tag-item-sound" data-tech="azure">Azure Certified</span>
+        <span class="h-tag blue tag-item-sound" data-tech="ai">Generative AI</span>
+        <span class="h-tag sf tag-item-sound" data-tech="salesforce">Salesforce</span>
+        <span class="h-tag sf tag-item-sound" data-tech="agentforce">Agentforce</span>
+        <span class="h-tag sf tag-item-sound" data-tech="mulesoft">MuleSoft</span>
+        <span class="h-tag tag-item-sound" data-tech="service-catalogs">Service Catalogs</span>
+        <span class="h-tag sf tag-item-sound" data-tech="slack-agents">Slack Agents</span>
+        <span class="h-tag blue tag-item-sound" data-tech="springboot">Spring Boot</span>
+        <span class="h-tag blue tag-item-sound" data-tech="oracle">Oracle Cloud</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary btn-item-sound">Get in touch</a>
+        <a href="#experience" class="btn-outline btn-item-sound">View experience</a>
+      </div>
+    </div>
+    
+    <div class="hero-visual">
+      <div class="stat-card stat-item-sound" data-section="role">
+        <div class="stat-icon si-blue">☁️</div>
+        <div>
+          <div class="stat-label">Current Role</div>
+          <div class="stat-val">Associate Cloud Engineer I @ NexTurn</div>
+        </div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="stat-card stat-item-sound" data-section="education">
+        <div class="stat-icon si-blue">🎓</div>
+        <div>
+          <div class="stat-label">Education</div>
+          <div class="stat-val">BTech EEE — NIT AP</div>
+          <div class="stat-sub">MBA — IIM Visakhapatnam (ongoing)</div>
+        </div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="stat-card stat-item-sound" data-section="expertise">
+        <div class="stat-icon si-blue">🤖</div>
+        <div>
+          <div class="stat-label">Top Expertise</div>
+          <div class="stat-val">Generative AI · Azure · Spring Boot</div>
+        </div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="stat-card stat-item-sound" data-section="integration">
+        <div class="stat-icon si-sf">🔗</div>
+        <div>
+          <div class="stat-label">Salesforce &amp; Integration</div>
+          <div class="stat-val">Agentforce · MuleSoft · Service Catalogs</div>
+          <div class="stat-sub">Slack Agents · Salesforce Connectors</div>
+        </div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="stat-card stat-item-sound" data-section="certs-stat">
+        <div class="stat-icon si-green">🏅</div>
+        <div>
+          <div class="stat-label">Certifications</div>
+          <div class="stat-val">20+ Industry Credentials</div>
+          <div class="stat-sub">Microsoft · Oracle · Salesforce · Google</div>
+        </div>
+        <div class="hud-card-corners"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="section-label">Capabilities Matrix</div>
+    <h2 class="section-title">Core Skills</h2>
+    <p class="section-sub">Cloud-native, AI-first development stack spanning backend, CRM integration, service
+      automation &amp; intelligent systems.</p>
+    <div class="skills-grid">
+      <div class="skill-card card-item-sound">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">Cloud Platforms</div>
+        <div class="skill-tech">Microsoft Azure · Oracle Cloud Infrastructure · Azure AI Services · OCI DevOps</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="skill-card card-item-sound">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-name">Generative AI</div>
+        <div class="skill-tech">LLMs · AI Agents · Prompt Engineering · Vertex AI · Databricks Gen AI · Gen AI Mastery</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="skill-card card-item-sound">
+        <div class="skill-icon">⚙️</div>
+        <div class="skill-name">Backend Development</div>
+        <div class="skill-tech">Java · Spring Boot · Microservices · REST APIs · MuleSoft Integration Flows</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="skill-card sf card-item-sound">
+        <div class="skill-icon">🔵</div>
+        <div class="skill-name">Salesforce Ecosystem</div>
+        <div class="skill-tech">Salesforce CRM · Agentforce · Service Cloud · Salesforce Developer · AppExchange</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="skill-card sf card-item-sound">
+        <div class="skill-icon">🔗</div>
+        <div class="skill-name">Service Catalogs &amp; Integration</div>
+        <div class="skill-tech">MuleSoft Connectors · Service Catalog Design · Slack Agents · Workflow Automation</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="skill-card card-item-sound">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Data &amp; Analytics</div>
+        <div class="skill-tech">Microsoft Fabric · Data Engineering · EDA · Machine Learning · Recommendation Systems</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="skill-card card-item-sound">
+        <div class="skill-icon">🔄</div>
+        <div class="skill-name">DevOps &amp; Agile</div>
+        <div class="skill-tech">Oracle Cloud DevOps · CI/CD Pipelines · Scrum · Infrastructure Automation</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="skill-card card-item-sound">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-name">Database &amp; Web</div>
+        <div class="skill-tech">MySQL · SQL · Web Analytics · Digital Marketing</div>
+        <div class="hud-card-corners"></div>
+      </div>
+    </div>
+
+    <!-- SALESFORCE DEEP DIVE -->
+    <div class="sf-feature">
+      <div class="sf-header">
+        <div class="sf-logo">🔵</div>
+        <div>
+          <div class="sf-title">Salesforce &amp; MuleSoft Engineering</div>
+          <div class="sf-subtitle">Agentforce · Service Catalogs · Slack Agents · MuleSoft Connectors</div>
+        </div>
+      </div>
+      <div class="sf-grid">
+        <div class="sf-item item-item-sound">
+          <div class="sf-item-icon">🔌</div>
+          <div class="sf-item-title">MuleSoft Salesforce Connectors</div>
+          <div class="sf-item-desc">Developed custom MuleSoft connectors to integrate Salesforce CRM with enterprise
+            systems — enabling real-time bidirectional data sync, automated lead flows, and unified API management
+            across platforms.</div>
+        </div>
+        <div class="sf-item item-item-sound">
+          <div class="sf-item-icon">📋</div>
+          <div class="sf-item-title">Service Catalog Design</div>
+          <div class="sf-item-desc">Built and configured Salesforce Service Catalogs to standardize IT and business
+            service requests — reducing resolution times through structured intake, approval workflows, and automated
+            provisioning pipelines.</div>
+        </div>
+        <div class="sf-item item-item-sound">
+          <div class="sf-item-icon">💬</div>
+          <div class="sf-item-title">Slack Agents</div>
+          <div class="sf-item-desc">Developed AI-powered Slack Agents connected to Salesforce, enabling teams to query
+            CRM data, create records, trigger workflows, and manage service requests — all directly from Slack without
+            switching apps.</div>
+        </div>
+        <div class="sf-item item-item-sound">
+          <div class="sf-item-icon">🤖</div>
+          <div class="sf-item-title">Agentforce Specialist</div>
+          <div class="sf-item-desc">Salesforce Certified Agentforce Specialist — skilled in designing autonomous AI
+            agents that handle customer queries, case routing, and proactive engagement within the Salesforce ecosystem.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience">
+    <div class="section-label">Deployment Log</div>
+    <h2 class="section-title">Experience</h2>
+    <p class="section-sub">From cloud engineering and CRM integration to academic leadership — a track record of
+      delivering impact.</p>
+    <div class="timeline">
+      <div class="exp-item item-item-sound">
+        <div class="exp-dot"></div>
+        <div class="exp-company">NexTurn</div>
+        <div class="exp-role">Associate Cloud Engineer I</div>
+        <div class="exp-date">January 2026 – Present · 4 months</div>
+        <div class="exp-desc">Elevated to cloud engineering role, driving cloud infrastructure initiatives, AI
+          integrations, and full-stack development across enterprise-grade Azure &amp; Salesforce solutions.</div>
+        <ul class="exp-bullets">
+          <li>Architected MuleSoft connectors for Salesforce CRM integration with enterprise backend systems</li>
+          <li>Designed and deployed Service Catalogs in Salesforce to automate business request workflows</li>
+          <li>Built Slack Agents connected to Salesforce for real-time CRM access within team workspaces</li>
+          <li>Led cloud-native deployments on Azure using Spring Boot microservices and REST APIs</li>
+          <li>Contributed to Gen AI features using OCI Generative AI and Azure AI services</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag tag-item-sound">Azure</span>
+          <span class="tag sf tag-item-sound">Salesforce</span>
+          <span class="tag sf tag-item-sound">MuleSoft</span>
+          <span class="tag sf tag-item-sound">Agentforce</span>
+          <span class="tag tag-item-sound">Generative AI</span>
+          <span class="tag sf tag-item-sound">Slack Agents</span>
+          <span class="tag tag-item-sound">Spring Boot</span>
+        </div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="exp-item item-item-sound">
+        <div class="exp-dot"></div>
+        <div class="exp-company">NexTurn</div>
+        <div class="exp-role">Cloud Full Stack Junior Engineer Intern</div>
+        <div class="exp-date">September 2024 – January 2026 · 1 yr 5 months</div>
+        <div class="exp-desc">Developed full-stack cloud applications using Java, Spring Boot, and REST APIs.
+          Contributed to microservices architecture, Oracle Cloud DevOps, and early Salesforce ecosystem integrations.
+        </div>
+        <ul class="exp-bullets">
+          <li>Built RESTful APIs and Spring Boot microservices for cloud-native enterprise applications</li>
+          <li>Integrated Salesforce CRM data via MuleSoft for automated business workflows</li>
+          <li>Contributed to OCI DevOps pipelines and Generative AI proof-of-concepts</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag tag-item-sound">Java</span>
+          <span class="tag tag-item-sound">Spring Boot</span>
+          <span class="tag tag-item-sound">REST APIs</span>
+          <span class="tag tag-item-sound">Microservices</span>
+          <span class="tag sf tag-item-sound">MuleSoft</span>
+          <span class="tag orange tag-item-sound">Oracle Cloud</span>
+        </div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="exp-item item-item-sound">
+        <div class="exp-dot"></div>
+        <div class="exp-company">NITAP Sports Club &amp; Taskforce NIT AP</div>
+        <div class="exp-role">Co Secretary</div>
+        <div class="exp-date">September 2024 – April 2025 · 8 months · Tadepalligudem</div>
+        <div class="exp-desc">Led student welfare and sports initiatives across NIT Andhra Pradesh, coordinating events
+          and managing cross-functional student teams.</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="exp-item item-item-sound">
+        <div class="exp-dot"></div>
+        <div class="exp-company">Vulcanzy &amp; TECHKRIYA — NIT Andhra Pradesh</div>
+        <div class="exp-role">Stalls &amp; Activities Secretary</div>
+        <div class="exp-date">September 2024 – February 2025</div>
+        <div class="exp-desc">Managed stalls and activity planning for NIT AP's flagship annual technical fest and
+          cultural fest, coordinating vendors and student teams across both events.</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="exp-item item-item-sound">
+        <div class="exp-dot"></div>
+        <div class="exp-company">NIT Tiruchirappalli</div>
+        <div class="exp-role">Summer Research Intern</div>
+        <div class="exp-date">June 2023 – July 2023 · 2 months · Tiruchirappalli</div>
+        <div class="exp-desc">Research internship at NIT Trichy, gaining hands-on exposure to engineering research
+          methodologies and advanced technical environments.</div>
+        <div class="hud-card-corners"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certs">
+    <div class="section-label">Validation Keys</div>
+    <h2 class="section-title">Certifications</h2>
+    <p class="section-sub">20+ industry-recognised credentials across cloud, AI, data engineering, Salesforce, and agile
+      practices.</p>
+
+    <!-- Interactive Filters -->
+    <div class="cert-filters">
+      <button class="filter-btn active btn-item-sound" data-filter="all">All</button>
+      <button class="filter-btn btn-item-sound" data-filter="microsoft">Microsoft</button>
+      <button class="filter-btn btn-item-sound" data-filter="oracle">Oracle Cloud</button>
+      <button class="filter-btn btn-item-sound" data-filter="salesforce">Salesforce</button>
+      <button class="filter-btn btn-item-sound" data-filter="ai-data">AI &amp; Data Science</button>
+      <button class="filter-btn btn-item-sound" data-filter="other">Database &amp; Agile</button>
+    </div>
+
+    <!-- CERTIFICATION CARDS -->
+    <div class="certs-list">
+      <!-- Microsoft Group -->
+      <div class="cert-group" data-cat="microsoft">
+        <div class="cert-group-label">Microsoft</div>
+        <div class="cert-grid">
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-ms">🪟</div>
+            <div class="cert-info">
+              <div class="cert-name">Azure Developer Associate</div>
+              <div class="cert-org">Microsoft</div>
+              <div class="cert-date">Mar 2023</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-ms">🪟</div>
+            <div class="cert-info">
+              <div class="cert-name">Azure Fundamentals</div>
+              <div class="cert-org">Microsoft</div>
+              <div class="cert-date">Dec 2022</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-ms">🪟</div>
+            <div class="cert-info">
+              <div class="cert-name">Azure AI Fundamentals</div>
+              <div class="cert-org">Microsoft</div>
+              <div class="cert-date">Dec 2022</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-ms">🪟</div>
+            <div class="cert-info">
+              <div class="cert-name">Fabric Data Engineer Associate</div>
+              <div class="cert-org">Microsoft</div>
+              <div class="cert-date">Nov 2025 · Expires Nov 2026</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-ms">🪟</div>
+            <div class="cert-info">
+              <div class="cert-name">Introduction to Generative AI Concepts</div>
+              <div class="cert-org">Microsoft</div>
+              <div class="cert-date">Aug 2025</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oracle Group -->
+      <div class="cert-group" data-cat="oracle">
+        <div class="cert-group-label">Oracle Cloud Infrastructure</div>
+        <div class="cert-grid">
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-oracle">🔴</div>
+            <div class="cert-info">
+              <div class="cert-name">OCI Generative AI Professional</div>
+              <div class="cert-org">Oracle</div>
+              <div class="cert-date">Aug 2025</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-oracle">🔴</div>
+            <div class="cert-info">
+              <div class="cert-name">OCI DevOps Professional</div>
+              <div class="cert-org">Oracle</div>
+              <div class="cert-date">Aug 2025</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-oracle">🔴</div>
+            <div class="cert-info">
+              <div class="cert-name">OCI AI Foundations Associate</div>
+              <div class="cert-org">Oracle</div>
+              <div class="cert-date">Aug 2025</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-oracle">🔴</div>
+            <div class="cert-info">
+              <div class="cert-name">OCI Data Science Professional</div>
+              <div class="cert-org">Oracle</div>
+              <div class="cert-date">Sep 2025</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-oracle">🔴</div>
+            <div class="cert-info">
+              <div class="cert-name">Oracle AI Vector Search Professional</div>
+              <div class="cert-org">Oracle</div>
+              <div class="cert-date">Sep 2025</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salesforce Group -->
+      <div class="cert-group" data-cat="salesforce">
+        <div class="cert-group-label">Salesforce</div>
+        <div class="cert-grid">
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-sf">🔵</div>
+            <div class="cert-info">
+              <div class="cert-name">Salesforce Certified Agentforce Specialist</div>
+              <div class="cert-org">Trailhead by Salesforce</div>
+              <div class="cert-date">Oct 2025 · ID 6838413</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-si">🔷</div>
+            <div class="cert-info">
+              <div class="cert-name">Salesforce Developer</div>
+              <div class="cert-org">SmartInternz</div>
+              <div class="cert-date">Jan 2024 · ID SISFVIPAD2024-76186</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI & Data Group -->
+      <div class="cert-group" data-cat="ai-data">
+        <div class="cert-group-label">Generative AI &amp; Data Science</div>
+        <div class="cert-grid">
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-db">🟠</div>
+            <div class="cert-info">
+              <div class="cert-name">Academy Accreditation — Generative AI Fundamentals</div>
+              <div class="cert-org">Databricks</div>
+              <div class="cert-date">Mar 2026 · ID 177918680</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-nxt">🚀</div>
+            <div class="cert-info">
+              <div class="cert-name">Generative AI Mastery Workshop</div>
+              <div class="cert-org">NxtWave</div>
+              <div class="cert-date">Aug 2025</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-google">🔵</div>
+            <div class="cert-info">
+              <div class="cert-name">Prompt Design in Vertex AI Skill Badge</div>
+              <div class="cert-org">Google</div>
+              <div class="cert-date">Aug 2025</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-fl">🟣</div>
+            <div class="cert-info">
+              <div class="cert-name">Artificial Intelligence</div>
+              <div class="cert-org">FutureLearn</div>
+              <div class="cert-date">Jun 2023</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-gl">🟢</div>
+            <div class="cert-info">
+              <div class="cert-name">Basics of Machine Learning</div>
+              <div class="cert-org">Great Learning</div>
+              <div class="cert-date">Jul 2023 · ID YHMPFRSU</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-gl">🟢</div>
+            <div class="cert-info">
+              <div class="cert-name">Exploratory Data Analysis Essentials</div>
+              <div class="cert-org">Great Learning</div>
+              <div class="cert-date">Oct 2023 · ID LTWJRCRG</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-gl">🟢</div>
+            <div class="cert-info">
+              <div class="cert-name">Building Recommendation Systems</div>
+              <div class="cert-org">Great Learning</div>
+              <div class="cert-date">Jul 2023 · ID RZRBOALQ</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-fl">🟣</div>
+            <div class="cert-info">
+              <div class="cert-name">Web Analytics</div>
+              <div class="cert-org">FutureLearn</div>
+              <div class="cert-date">Jul 2023</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Group -->
+      <div class="cert-group" data-cat="other">
+        <div class="cert-group-label">Database, Marketing &amp; Agile</div>
+        <div class="cert-grid">
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-gl">🟢</div>
+            <div class="cert-info">
+              <div class="cert-name">MySQL Basics</div>
+              <div class="cert-org">Great Learning</div>
+              <div class="cert-date">Jun 2023 · ID ETDQTOAC</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-gl">🟢</div>
+            <div class="cert-info">
+              <div class="cert-name">Introduction to Digital Marketing</div>
+              <div class="cert-org">Great Learning</div>
+              <div class="cert-date">May 2023 · ID JYBIXQAJ</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+          <div class="cert-card card-item-sound">
+            <div class="cert-badge cb-scrum">🔷</div>
+            <div class="cert-info">
+              <div class="cert-name">Scrum Fundamentals Certified (SFC)</div>
+              <div class="cert-org">SCRUMstudy</div>
+              <div class="cert-date">Aug 2025 · ID 1098047</div>
+            </div>
+            <div class="hud-card-corners"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <div class="section-label">Academic Qualifications</div>
+    <h2 class="section-title">Education</h2>
+    <p class="section-sub">Dual-track academic journey across engineering and business at India's top institutions.</p>
+    <div class="edu-grid">
+      <div class="edu-card card-item-sound">
+        <div class="edu-degree">MBA · In Progress</div>
+        <div class="edu-school">IIM Visakhapatnam</div>
+        <div class="edu-field">Master of Business Administration</div>
+        <div class="edu-year">Feb 2025 – Apr 2027</div>
+        <div class="hud-card-corners"></div>
+      </div>
+      <div class="edu-card card-item-sound">
+        <div class="edu-degree">B.Tech · Completed</div>
+        <div class="edu-school">NIT Andhra Pradesh</div>
+        <div class="edu-field">Electrical and Electronics Engineering</div>
+        <div class="edu-year">Dec 2021 – May 2025</div>
+        <div class="hud-card-corners"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="item-item-sound">
+    <div class="section-label">Secure Uplink</div>
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-sub">Open to opportunities in cloud, AI, Salesforce &amp; full-stack engineering. Let's build
+      something intelligent together.</p>
+    <div class="contact-links">
+      <a href="mailto:1916118916.maruthi@gmail.com" class="contact-link link-item-sound">✉️ Email</a>
+      <a href="https://www.linkedin.com/in/maruthi-mahesh-uppalamarthi-b67150377" target="_blank"
+        class="contact-link link-item-sound">💼 LinkedIn</a>
+      <a href="tel:+919177520983" class="contact-link link-item-sound">📞 Call</a>
+    </div>
+    <div class="hud-card-corners"></div>
+  </section>
+
+  <footer>
+    <div class="hud-grid-deco"></div>
+    &copy; 2026 Maruthi Mahesh Uppalamarthi · Cloud &amp; AI Full Stack Engineer
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
